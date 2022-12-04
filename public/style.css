@@ -1,0 +1,646 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@400;500&family=Bebas+Neue&family=Bree+Serif&family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Verdana', cursive;
+}
+
+/*navigation bar*/
+.navbar {
+  height: 70px;
+  overflow: hidden;
+  background-color: maroon;
+}
+
+.navbar a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 25px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Logo */
+.navbar #logo {
+  height: 110%;
+  width: auto;
+  margin-top:-10px;
+}
+
+@media screen  and (max-width: 960px) {
+  .navbar {
+   display: flex;
+   justify-content: space-between;
+   height: 80px;
+   z-index: 1;
+   width: 100%;
+   max-width: 1300px;
+   padding: 0;
+  }
+}
+
+
+
+.parallax {
+  /* The image used */
+  background-image: url("images/eminem1.jpg ");
+
+  /* Set a specific height */
+  min-height: 970px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/*listen now butt0n*/
+.spotify_btn {
+  font-size: 5rem;
+  background-color:greenyellow;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  width: 100%;
+  cursor: pointer;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.spotify_btn a {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+
+.spotify_btn:hover {
+   color: black;
+}
+
+/*shop section*/
+
+.center-shop {
+  margin-bottom: 40px;
+  justify-content: center;
+  text-align: center;
+}
+
+.shop_title {
+  font-size: 40px;
+}
+
+/* shop image*/
+.column3 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: auto; 
+}
+/* on hover */
+.column3 img{
+  transition: opacity 0.4s;
+}
+
+.column3 img:hover {
+  opacity: 0.4;
+}
+
+
+.product-title{
+  font-size: 20px;
+}
+
+.product-price{
+  font-style: italic; 
+}
+
+
+
+
+/* shop now button */
+.button-box {
+  height: 150px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop_all {
+background: white;
+color: black;
+border: 2px black;
+border-radius: 5px;
+transition: all 300ms;
+}
+
+.shop_all:hover {
+color: #494949;
+border: 2px solid #494949;
+border-radius: 50px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  font-family: 'Bree Serif', serif;
+  margin: 0;
+  background-color: #13171c;
+  color: white;
+}
+
+/*footer*/
+.footer-distributed {
+  background-color: #292c2f;
+  width: 100%;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 50px;
+}
+
+/* icon settings */
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+      margin: 0;
+      margin-right: 0px;
+      margin-left: 0px;
+      padding: 10px;
+      width: 100%;
+  }
+}
+
+
+
+/*newsletter buttone*/
+input {
+  width: 400px;
+  height: 45px;
+  border: 4px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
+}
+
+button{
+  width: 140px;
+  height: 45px;
+  border: 4px;
+  color: white;
+  background-color: maroon;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .footer {
+      margin: 0;
+      padding: 10px;
+      width: 100%;
+  }
+} 
+
+
+
+
+
+
+
+video {
+  width: 100%;
+}
+
+
+.main-video {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text]{
+  width: 25%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=text],textarea{
+  width: 50%;
+}
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: white;
+}
+
+
+h2{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: white;
+}
+
+h2:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #414249;
+}
+
+.field {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0,0,0,0);
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+
+.field:focus{
+    background-color: #A57A5A;
+}
+
+.field area{
+    min-height: 150px;
+}
+
+.butn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: #d59e8a;
+    font-family: 'Pacifico', cursive;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: .3s;
+    margin-bottom: 20px;
+}
+
+.butn:hover{
+    background-color: #eacdb7;
+}
+
+/* Reset CSS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+
+
+
+
+/* about container */
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+/* About */
+.masthead-intro,
+.content-footer {
+  text-align: center;
+  font-family: 'Anek Devanagari', sans-serif;
+}
+
+.masthead {
+  padding: 11em 0;
+  background-image: url('images/about.jpg');
+  background-size: cover;
+
+}
+
+.masthead-intro {
+  /* Text Declarations */
+  margin-bottom: 0.1em;
+  font-size: 4em;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+
+/*about page column*/
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Text Declarations for Sections */
+
+.introduction-section > p,
+.content-footer > p,
+.questions-section > p {
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+
+.introduction-section,
+.questions-section {
+  max-width: 80em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+
+.questions-section > h2 {
+  /*Typography Declarations */
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 1.1 em;
+  font-weight: bold;
+  color: #fff;
+}
+
+.about-container p{
+  font-size: 18px;
+}
+
+
+
+
+.content-footer {
+  padding: 2em 0;
+  margin-top: 3em;
+  background: #2b3840;
+}
+
+
+
+
+@media only screen and (max-width: 571px) {
+    .masthead {
+        padding: 5em 0;
+    }
+    .masthead-intro {
+        font-size: 3em;
+    }
+
+    .container {
+        padding: 0 3em;
+    }
+  }
+
+
+
+
+/* -======= Contact =====- */
+
+.contact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+
+contact-text {
+  flex-basis: 48%;
+}
+
+.contact-text p {
+  font-size: 32px;
+  margin-bottom: 30px;
+  margin-right: 40px;
+  font-weight: 800;
+}
+
+.contact-text h6,
+.contact-text .address{
+  font-weight: 500;
+  font-size:medium;
+}
+
+
+
+.contact-form {
+  flex-basis: 50%;
+}
+
+.cont .contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.cont .contact-form form label {
+  font-size: medium;
+  padding: 10px 0px;
+}
+
+.cont .contact-form form input,
+.cont .contact-form form textarea {
+  font-size: var(--medium-font-size);
+  padding: 10px 0;
+  resize: none;
+  margin: 6px 0;
+  width: 70%;
+  border-radius: 3px;
+  outline: none;
+  border: 2px solid var(--grey-color);
+}
+
+.cont .contact-form form input[type="submit"] {
+  margin: 16px 0;
+  width: 26%;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid white;
+  font-size: var(--medium-font-size);
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  transition: 0.4s;
+}
+
+.cont .contact-form form input[type="submit"]:hover {
+  background-color: var(--primary-color);
+  color: var(--dar-blue-color);
+  font-weight: 600;
+}
+
+
+/* -======= Media Queriers =====- */
+
+@media (max-width: 500px) {
+  .cont {
+      display: block;
+      flex-direction: column;
+  }
+  .contact {
+      padding-top: 0;
+  }
+  .cont .contact-form form input,
+  .cont .contact-form form textarea {
+      width: 100%;
+  }
+  .cont .contact-form form input[type="submit"] {
+      width: 23%;
+      font-size: var(--small-font-size);
+  }
+  .contact-text p {
+      margin-right: 0;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  .cont {
+      display: block;
+      flex-direction: column;
+  }
+  .contact {
+      padding-top: 0;
+  }
+  .cont .contact-form form input,
+  .cont .contact-form form textarea {
+      width: 100%;
+  }
+  .cont .contact-form form input[type="submit"] {
+      width: 23%;
+      font-size: var(--small-font-size);
+  }
+  .contact-text p {
+      margin-right: 0;
+  }
+}
+
+
+
+
+/* Discography page */
+.container2{
+  display: flex;
+  font-family: 'Bree Serif', serif;
+  font-size: 20px;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  color: white;
+  text-align: center;
+  flex-wrap: wrap;  
+}
+
+.album p{
+  margin-top: 20px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.album:hover {
+  transform: scale(1.03);
+  transition: all 0.5s ease;
+} 
+
