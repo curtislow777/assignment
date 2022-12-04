@@ -94,6 +94,9 @@ If this section grows too long, you may want to split it off into a separate fil
 
 ### Content
 
+I tried following this video for my javascript but it didn't work
+https://www.youtube.com/watch?v=AF6vGYIyV8M
+
 Parallex scrolling effect from :
 https://www.w3schools.com/howto/howto_css_parallax.asp
 
