@@ -78,6 +78,9 @@ If this section grows too long, you may want to split it off into a separate fil
 
 ### Content
 
+Parallex scrolling effect from :
+https://www.w3schools.com/howto/howto_css_parallax.asp
+
 Merchandise items and images took from:
 https://shop.eminem.com/
 
