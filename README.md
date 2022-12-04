@@ -60,6 +60,22 @@ Wireframe: https://xd.adobe.com/view/dfa2bf97-cdda-4b4d-b3f8-81768e6d3a64-8af1/
 
 For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
+Social Icons:
+
+- Scroll to the footer of the website
+- Clicking any of the social media icons will direct the user to the social media page in a new tab
+
+Index page:
+
+- Scroll down to see merch
+- Hover over images will dim it
+- Clicking on images will redirect user to the product's official store page
+- Clicking on the 'shop all button' will redirect user to the offical store page
+
+Discography Page:
+
+- Hover over the album images for it to expand
+
 Contact form:
 
 - go to "contact" page
